@@ -43,4 +43,3 @@ export class HttpErrorInterceptor  extends HttpErrorResponse {
             )
     }
 }   
-© 2019 GitHub, Inc.

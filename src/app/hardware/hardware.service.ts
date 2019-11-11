@@ -21,7 +21,7 @@ export class HardwareService {
 
 
     createHardware(hardware): Observable<Hardware> {
-        return this.http.post<Hardware>(API_URL + editorials, hardware);
+        return this.http.post<Hardware>('http://localhost:8080/s2_sitiosweb-api/api/projects/3/hardwares', hardware);
     }
     
     updateHardware(hardware): Observable<Hardware> {
