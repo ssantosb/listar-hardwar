@@ -1,8 +1,0 @@
-{
-  "id": 5,
-  "name": "Apple",
-  "projects":[
-    { "company":"Ferrari", "id":4 },
-    { "company":"Maserati", "id":6 }
-  ]
-}
