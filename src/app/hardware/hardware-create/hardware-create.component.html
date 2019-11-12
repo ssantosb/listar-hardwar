@@ -4,7 +4,7 @@
         <br>
         <h2 class="text-center">Create a hardware</h2>
         <br>
-        <form name="hardware" (ngSubmit)="f.form.valid && createHardware()" #f="ngForm" novalidate>
+<form [formGroup]="hardwareForm" (ngSubmit)="!hardwareForm.invalid &&createHardware(hardwareForm.value)">
             <div class="form-group">
                 <label for="hardwareId"><b>Id</b></label>
                 <input type="text" name="hardwareId" class="form-control" id="hardwareId" [(ngModel)]="hardware.id"
