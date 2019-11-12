@@ -10,7 +10,7 @@ import {HardwareService} from '../hardware.service';
 })
 export class HardwareListComponent implements OnInit {
 
-  constructor(private hardwareService: HardwareService, private router: Router, ,private route:ActivatedRoute) { }
+  constructor(private hardwareService: HardwareService, private router: Router, private route:ActivatedRoute) { }
 
 hardwares: Hardware[];
 
