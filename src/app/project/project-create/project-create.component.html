@@ -23,7 +23,7 @@
 
   <div class="form-group mx-sm-3 mb-2">
       <label for="projectProvider">Choose the project's provider</label>
-      <select class="custom-select" (change) ="onSelectShow($event.target.value)" [(ngModel)] = "project.provider" formControlName="providerSelect"  id="projectProvider"
+      <select class="custom-select"  [(ngModel)] = "project.provider" formControlName="providerSelect"  id="projectProvider"
           required>
           <option [ngValue]="p" *ngFor="let p of providers">
             {{p.name}}
@@ -46,7 +46,6 @@
           <div>The project's leader is missing</div>
       </div>
   </div>
-
 
 
   <button class="button mx-sm-3 mb-2" type="submit" [disabled]="projectForm.invalid">Submit</button>
